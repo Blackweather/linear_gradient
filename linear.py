@@ -5,7 +5,7 @@ import random
 
 def calculateCostSum(function, dataX, dataY, dataCount):
     toReturn = 0
-    for i in range(0, dataCount):
+    for i in range(1, dataCount):
         functionValue = function(dataX[i])
         diff = functionValue - dataY[i]
         diff *= diff
@@ -16,7 +16,7 @@ def calculateCostSum(function, dataX, dataY, dataCount):
 
 def calculateDerivativeSum(function, dataX, dataY, dataCount):
     toReturn = 0
-    for i in range(0, dataCount):
+    for i in range(1, dataCount):
         functionValue = function(dataX[i])
         diff = functionValue - dataY[i]
         toReturn += diff
@@ -26,7 +26,7 @@ def calculateDerivativeSum(function, dataX, dataY, dataCount):
 
 def calculateDerivativeSum1(function, dataX, dataY, dataCount):
     toReturn = 0
-    for i in range(0, dataCount):
+    for i in range(1, dataCount):
         functionValue = function(dataX[i])
         diff = functionValue - dataY[i]
         # the difference from theta0
